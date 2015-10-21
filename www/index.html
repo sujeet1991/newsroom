@@ -1,46 +1,460 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>newsroom</title>
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/titatoggle-dist-min.css">
+    <link rel="stylesheet" href="css/bootstrap-slider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <section class="comman-nav navbar-fixed-top">
+     <div class="container-fluid padd0">
+       <div class="col-xs-2 padd0">
+          <div class="open-menu"><span><i class="fa fa-bars"></i></span></div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+       <div class="col-xs-9 padd0">
+        <img src="images/logo.png" class="img-responsive img-center logo" alt=""></div>
+     </div>
+   </section>
+<section class="nav-right">
+  <form action="">
+    <div class="form-group">
+      <input type="text" class="ser-text" placeholder="search">
+    </div>
+    <div class="form-group">
+      <ul class="sub-menu">
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/home.png" class="img-responsive" alt=""></span><span class="span-name">Home</span></a></li>
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/user.png" class="img-responsive" alt=""></span><span class="span-name">Register / Login in</span></a></li>
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/dis.png" class="img-responsive" alt=""></span><span class="span-name">Discover Premium</span></a></li>
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/fe.png" class="img-responsive" alt=""></span><span class="span-name">Featured</span></a></li>
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/cat.png" class="img-responsive" alt=""></span><span class="span-name">Categories</span></a></li>
+        <li class="clearfix"><a href=""><span class="span-img"><img src="images/newsource.png" class="img-responsive" alt=""></span><span class="span-name">News Source</span></a></li>
+         <li class="clearfix"><a href=""><span class="span-img"><img src="images/his.png" class="img-responsive" alt=""></span><span class="span-name">History</span></a></li>
+          <li class="clearfix"><a href=""><span class="span-img"><img src="images/add.png" class="img-responsive" alt=""></span><span class="span-name">Add Custom  Category</span></a></li>
+           <li class="clearfix"><a href=""><span class="span-img"><img src="images/seting.png" class="img-responsive" alt=""></span><span class="span-name">Settings</span></a></li>
+
+        
+      </ul>
+    </div>
+
+  </form>
+</section>
+
+<!-- nav bar end  -->
+
+
+<section class="login-bg comman-padd hide">
+  <div class="container-fluid fill">
+    <div class="col-xs-12">
+      <div class="login-form">
+        <p class="text-center log-para">Login in</p>
+        <form action="">
+          <div class="form-group">
+            <input type="email" class="form-control txt-input" placeholder="Email Id">
+          </div>
+           <div class="form-group">
+            <input type="text" class="form-control txt-input" placeholder="Password">
+          </div>
+          <div class="form-group text-center">
+            <input class="btn btn-default btn-submit" type="submit" value="Submit">
+          </div>
+        </form>
+        <div class="col-xs-12 text-center mar2">
+          <p class="regis"><br><a href="javascript:void(0);" class="mem-info">Sign Up</a>
+</p>
+ <p class="regis"><br><a href="javascript:void(0);" class="">Forgot Password</a>
+</p>
+        </div>
+      </div><!--endlogin-form-->
+
+
+      <div class="sign-up-form ">
+        <p class="text-center log-para">Sign up</p>
+        <div class="col-xs-12 text-center"><span class="with">WITH</span></div> 
+        <div class="col-xs-12 text-center"><a href=""><img src="images/fb.png" class="img-responsive img-center" alt=""></a></div> 
+        <div class="col-xs-12 text-center"><span class="with">OR</span></div> 
+           <form action="">
+             <div class="form-group">
+            <input type="text" class="form-control txt-input" placeholder="Name">
+          </div>
+           <div class="form-group">
+            <input type="text" class="form-control txt-input" placeholder="Contact Number">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control txt-input" placeholder="Email Id">
+          </div>
+           <div class="form-group">
+            <input type="text" class="form-control txt-input" placeholder="Password">
+          </div>
+          <div class="form-group text-center">
+            <input class="btn btn-default btn-submit" type="submit" value="Submit">
+          </div>
+          <p class="regis text-center"><a href="javascript:void(0);" class="sign-log">Sign In</a></p>
+        </form>
+      </div><!--sign-up-form-->
+
+
+
+    </div>
+  </div>
+  
+</section>
+
+
+
+<!-- category listing page  -->
+<section class="page-cate hide">
+ <div class="headewith-img common-img">
+   <p class="catecomm-para">Category Name</p>
+ </div><!--headewith-img--> 
+ <div class="cate-listheigth">
+   <div class="main-cate clearfix">
+     <div class="col-xs-12 padd0 clearfix">
+       <div class="histo-img"></div>
+          <p class="news-name">Category Name</p>
+      </div>
+      <div class="col-xs-12 padd0 clearfix text-right">
+        <a href="" class="readmore-cate">READ MORE</a>
+      </div>
+      <div class="col-xs-12 padd0">
+        <img src="images/cimg.png" class="img-responsive img-center img-cate" alt="">
+      </div>
+      <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+
+   </div><!--main-cate-->
+      <div class="main-cate clearfix">
+     <div class="col-xs-12 padd0 clearfix">
+       <div class="histo-img"></div>
+          <p class="news-name">Category Name</p>
+      </div>
+      <div class="col-xs-12 padd0 clearfix text-right">
+        <a href="" class="readmore-cate">READ MORE</a>
+      </div>
+      <div class="col-xs-12 padd0">
+        <img src="images/cimg.png" class="img-responsive img-center img-cate" alt="">
+      </div>
+      <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+
+   </div><!--main-cate-->
+
+ </div><!--cate-listheigth-->
+   <div class="loadhistory"><span class="text-center">Load More &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></span></div>
+  
+</section>
+
+<!-- category listing view page -->
+<section class="page-cate padd-50 hide">
+ <div class="headewith-img common-img">
+   <p class="catecomm-para">Category Name</p>
+ </div><!--headewith-img--> 
+ <div class="cate-listheigth">
+   <div class="main-cate clearfix">
+     <div class="col-xs-12 padd0 clearfix">
+       <div class="histo-img"></div>
+          <p class="news-name">Category Name</p>
+      </div>
+    
+      <div class="col-xs-12 padd0">
+        <img src="images/cimg.png" class="img-responsive img-center img-cate" alt="">
+      </div>
+      <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+
+   </div><!--main-cate-->
+    
+
+ </div><!--cate-listheigth-->
+<div class="col-xs-12 padd0 share-twoveiw ">
+   <div class="inner-share">
+     <ul class="share-icon">
+       <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="javascript:void(0);"><i class="fa fa-whatsapp"></i></a></li>
+     </ul>
+   </div><!--inner-share-->  
+  <div class="col-xs-6 padd0 text-center">
+    <div class="share-div text-center" style="background:#000;"><span class="share-para">Full Story</span></div>
+  </div>
+   <div class="col-xs-6 padd0">
+     <div class="share-div text-center"><span class="share-para share-slide">share</span></div>
+   </div>
+</div> 
+  
+</section>
+
+<!-- newspaper new list -->
+<section class="page-cate">
+ <div class="headewith-img common-img">
+   <p class="catecomm-para">Select Newspaper</p>
+ </div><!--headewith-img--> 
+ <div class="cate-listheigth">
+  <div class="col-xs-12 padd0">
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+  </div>
+    <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="toi-img">
+        <img src="images/toi.png" class="img-responsive  img-center" alt="">
+      </div>
+    </div>
+  </div>
+
+    
+<div class="clear"></div>
+ </div><!--cate-listheigth-->
+  <div class="loadhistory"><span class="text-center">Load More &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></span></div>
+  
+</section>
+
+
+
+
+
+
+
+
+
+<!-- select category section start -->
+<section class="category-sec common-img hide">
+  <p class="cata-para">Select Category</p>
+  <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Sports</p></div>
+    <div class="col-xs-8"><input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="11"/></div>
+  </div><!--endcol-12-->
+   <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Politics</p></div>
+    <div class="col-xs-8"><input id="ex2" data-slider-id='ex2Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10"/></div>
+  </div><!--endcol-12-->
+   <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Television</p></div>
+    <div class="col-xs-8"><input id="ex3" data-slider-id='ex3Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="12"/></div>
+  </div><!--endcol-12-->
+    <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Category 1</p></div>
+    <div class="col-xs-8"><input id="ex4" data-slider-id='ex4Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="2"/></div>
+
+  </div><!--endcol-12-->
+
+    <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Category 2</p></div>
+    <div class="col-xs-8"><input id="ex5" data-slider-id='ex5Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="2"/></div>
+    
+  </div><!--endcol-12-->
+      <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Category 3</p></div>
+    <div class="col-xs-8"><input id="ex6" data-slider-id='ex6Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="5"/></div>
+    
+  </div><!--endcol-12-->
+     <div class="col-xs-12 padd0 mar5">
+    <div class="col-xs-4"><p class="spo-name">Category 4</p></div>
+    <div class="col-xs-8"><input id="ex7" data-slider-id='ex7Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="9"/></div>
+    
+  </div><!--endcol-12-->
+  <div class="col-xs-12 mar5 text-center">
+    <span class="start-load">Start &nbsp;<i class="fa fa-arrow-right"></i></span>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- history section start -->
+<section class="history hide">
+  <div class="histoer-first common-img">
+    <div class="top-header"><p class="hispara">History</p></div>
+    <div class="history-scroll clearfix">
+      <div class="col-full clearfix">
+        <div class="col-xs-10 padd0">
+          <div class="histo-img"></div>
+          <p class="news-name">Times Of India</p>
+           <p class="news-author">By  Authors Names</p>
+        </div><!--col-10-->
+        <div class="col-xs-2 padd0 text-center">
+          <span class="eyes-view"><i class="fa fa-eye"></i> &nbsp; 5</span>
+        </div>
+        <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><!--col-full-->
+      <div class="col-full clearfix">
+        <div class="col-xs-10 padd0">
+          <div class="histo-img"></div>
+          <p class="news-name">Times Of India</p>
+           <p class="news-author">By  Authors Names</p>
+        </div><!--col-10-->
+        <div class="col-xs-2 padd0 text-center">
+          <span class="eyes-view"><i class="fa fa-eye"></i> &nbsp; 5</span>
+        </div>
+        <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><!--col-full-->
+      <div class="col-full clearfix">
+        <div class="col-xs-10 padd0">
+          <div class="histo-img"></div>
+          <p class="news-name">Times Of India</p>
+           <p class="news-author">By  Authors Names</p>
+        </div><!--col-10-->
+        <div class="col-xs-2 padd0 text-center">
+          <span class="eyes-view"><i class="fa fa-eye"></i> &nbsp; 5</span>
+        </div>
+        <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><!--col-full-->
+      <div class="col-full clearfix">
+        <div class="col-xs-10 padd0">
+          <div class="histo-img"></div>
+          <p class="news-name">Times Of India</p>
+           <p class="news-author">By  Authors Names</p>
+        </div><!--col-10-->
+        <div class="col-xs-2 padd0 text-center">
+          <span class="eyes-view"><i class="fa fa-eye"></i> &nbsp; 5</span>
+        </div>
+        <div class="col-xs-12 padd0">
+          <p class="his-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><!--col-full-->
+
+    </div><!--history-scroll-->
+  </div><!--.histoer-first-->
+  <div class="loadhistory"><span class="text-center">Load More &nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></span></div>
+
+</section>
+<!-- history section end -->
+
+
+
+
+
+
+<!-- setting page  -->
+<section class="setting hide">
+  <div class="profile-bg clearfix">
+       <p class="text-center setting-para">Settings</p>
+       <div class="profile-img" style="background:url('images/profile.png') no-repeat;"></div>
+       <div class="col-xs-12 text-center">
+         <p class="pro-name">Babita Gupta</p>
+         <p class="con-info">+91 9819 275 964</p>
+         <a href="javascript:void(0);" class="edit-pro-name"><i class="fa fa-pencil-square-o"></i></a>
+       </div>  
+  </div><!--profile-bg-->
+
+  <div class="notification-head">
+    <p class="noti">Notification</p>
+   <div class="checkbox-noti">
+      <div class="checkbox checkbox-slider--b checkbox-slider-lg">
+            <label>
+              <input type="checkbox"><span></span>
+            </label>
+      </div>
+   </div> <!--checkbox-noti-->
+   
+  </div><!--notification-head-->
+  <div class="pref-bg">
+    <div class="container-fluid">
+      <div class="col-xs-12 padd0 mar2 clearfix">
+        <div class="col-xs-8 text-center">
+          <p class="newa-para"><a href="">Newspaper Preference</a></p>
+        </div>
+        <div class="col-xs-4 text-center"><span class="heard-i"><i class="fa fa-heart-o"></i></span></div>
+      </div>
+       <div class="col-xs-12 padd0 mar5 clearfix">
+        <div class="col-xs-8 text-center">
+          <p class="newa-para"><a href="">Category Preference</a></p>
+        </div>
+        <div class="col-xs-4 text-center"><span class="heard-i"><i class="fa fa-heart-o"></i></span></div>
+      </div>
+    </div><!--container-fluid-->
+  </div><!--pref-bg-->
+  <div class="notification-head" style="background:#0cd4e0;">
+    <p class="noti">My Subscription</p>
+  </div><!--notification-head-->
+
+  <div class="sub-white clearfix">
+    <div class="col-xs-8"><p class="subcri-para">Lorem Ipsum Lorem Ipsum</p></div>
+    <div class="col-xs-4 text-center"><spanm class="submit-sub"><i class="fa fa-arrow-right"></i></span></a></div>
+  </div>
+  <div class="sub-white clearfix">
+    <div class="col-xs-8"><p class="subcri-para">Lorem Ipsum Lorem Ipsum</p></div>
+    <div class="col-xs-4 text-center"><spanm class="submit-sub"><i class="fa fa-arrow-right"></i></span></a></div>
+  </div>
+
+</section>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
