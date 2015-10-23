@@ -2,6 +2,14 @@ $(document).ready(function() {
 	
 	var dummy = 0;
 // nav click section
+$('.sub-menu li a').click(function(){
+	$('.nav-right').toggle('slide', {
+            direction: 'left'
+        }, 500);
+	$('.open-menu span').removeClass('icon-roted');
+	$('.open-menu').parent().find('.open-menu').css({'background' :'transparent' ,'opacity':'1', 'color' :'#fff'});
+
+});
 $('.open-menu span').click(function(){
  		//alert('sujeet');
  	if(dummy == 0){
@@ -85,6 +93,83 @@ var slider = new Slider('#ex7', {
 	formatter: function(value) {
 		return 'Current value: ' + value;
 	}
+});
+
+
+// navigation btn click
+$('.fstart-btn').click(function(){
+	$('#home').hide();
+	$('#user-log').hide();
+	$('#history-nav').hide();
+	$('#read-share').hide();
+	$('#cate-read').hide();
+	$('#setting-nav').show();
+});
+//cate
+$('.cate-nav').click(function(){
+	$('#home').hide();
+	$('#user-log').hide();
+	$('#history-nav').hide();
+	$('#setting-nav').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#cate-nav').show();
+});
+// home page
+$('.opensign').click(function(){
+	$('#home').hide();
+	$('#cate-nav').hide();
+	$('#setting-nav').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#user-log').show();
+})
+$('.user-log').click(function(){
+	$('#home').hide();
+	$('#setting-nav').hide();
+	$('#history-nav').hide();
+	$('#cate-nav').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#user-log').show();
+});
+$('.home').click(function(){
+	$('#user-log').hide();
+	$('#cate-nav').hide();
+	$('#setting-nav').hide();
+	$('#history-nav').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#home').show();
+});
+// history
+$('.history-nav').click(function(){
+	$('#home').hide();
+	$('#cate-nav').hide();
+	$('#user-log').hide();
+	$('#setting-nav').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#history-nav').show();
+});
+// setting 
+$('.setting-nav').click(function(){
+	$('#home').hide();
+	$('#cate-nav').hide();
+	$('#user-log').hide();
+		$('#read-share').hide();
+		$('#cate-read').hide();
+	$('#setting-nav').show();
+
+});
+// after news paper
+$('.toi-img').click(function(){
+	$('#cate-nav').hide();
+	$('#cate-read').show();
+});
+$('.read-view').click(function(){
+	$('#cate-read').hide();
+	$('#read-share').show();
 });
 
 

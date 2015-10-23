@@ -40,15 +40,17 @@
     </div>
     <div class="form-group">
       <ul class="sub-menu">
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/home.png" class="img-responsive" alt=""></span><span class="span-name">Home</span></a></li>
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/user.png" class="img-responsive" alt=""></span><span class="span-name">Register / Login in</span></a></li>
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/dis.png" class="img-responsive" alt=""></span><span class="span-name">Discover Premium</span></a></li>
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/fe.png" class="img-responsive" alt=""></span><span class="span-name">Featured</span></a></li>
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/cat.png" class="img-responsive" alt=""></span><span class="span-name">Categories</span></a></li>
-        <li class="clearfix"><a href=""><span class="span-img"><img src="images/newsource.png" class="img-responsive" alt=""></span><span class="span-name">News Source</span></a></li>
-         <li class="clearfix"><a href=""><span class="span-img"><img src="images/his.png" class="img-responsive" alt=""></span><span class="span-name">History</span></a></li>
-          <li class="clearfix"><a href=""><span class="span-img"><img src="images/add.png" class="img-responsive" alt=""></span><span class="span-name">Add Custom  Category</span></a></li>
-           <li class="clearfix"><a href=""><span class="span-img"><img src="images/seting.png" class="img-responsive" alt=""></span><span class="span-name">Settings</span></a></li>
+        <li class="clearfix"><a href="javascript:void(0);" class="home clearfix"><span class="span-img"><img src="images/home.png" class="img-responsive" alt=""></span><span class="span-name">Home</span></a></li>
+        <li class="clearfix"><a href="javascript:void(0);" class="user-log clearfix"><span class="span-img"><img src="images/user.png" class="img-responsive" alt=""></span><span class="span-name">Register / Login in</span></a></li>
+        <li class="clearfix"><a href="javascript:void(0);"><span class="span-img"><img src="images/dis.png" class="img-responsive" alt=""></span><span class="span-name">Discover Premium</span></a></li>
+        <li class="clearfix"><a href="javascript:void(0);"><span class="span-img"><img src="images/fe.png" class="img-responsive" alt=""></span><span class="span-name">Featured</span></a></li>
+
+        <li class="clearfix"><a href="javascript:void(0);" class="clearfix cate-nav"><span class="span-img"><img src="images/cat.png" class="img-responsive" alt=""></span><span class="span-name">Categories</span></a></li>
+
+        <li class="clearfix"><a href="javascript:void(0);"><span class="span-img"><img src="images/newsource.png" class="img-responsive" alt=""></span><span class="span-name">News Source</span></a></li>
+         <li class="clearfix"><a href="javascript:void(0);" class="clearfix history-nav"><span class="span-img"><img src="images/his.png" class="img-responsive" alt=""></span><span class="span-name">History</span></a></li>
+          <li class="clearfix"><a href="javascript:void(0);"><span class="span-img"><img src="images/add.png" class="img-responsive" alt=""></span><span class="span-name">Add Custom  Category</span></a></li>
+           <li class="clearfix"><a href="javascript:void(0);" class="setting-nav clearfix"><span class="span-img"><img src="images/seting.png" class="img-responsive" alt=""></span><span class="span-name">Settings</span></a></li>
 
         
       </ul>
@@ -58,9 +60,23 @@
 </section>
 
 <!-- nav bar end  -->
+<!-- start page newsroom -->
+<section class="welcome-sec common-img" id="home">
+  <div class="inner-welcome">
+    <p class="welcome-para">welcome to</p>
+    <div class="col-xs-12"><img src="images/logo1.png" class="img-responsive img-center" alt=""></div>
+    <div class="col-xs-12 text-center">
+      <span class="fstart-btn"> Start <i class="fa fa-arrow-right"></i></span>
+    </div><!--end col-xs-12-->
+    
+  </div><!--inner-welcome-->
+  <p class="ready-acc">Already have an account ?</p>
+<p class="ready-acc"><a href="javascript:void(0);" class="opensign">Sign in here</a></p>
+</section><!--welcome-sec-->
 
 
-<section class="login-bg comman-padd hide">
+<!-- log in sign up form -->
+<section class="login-bg comman-padd" id="user-log">
   <div class="container-fluid fill">
     <div class="col-xs-12">
       <div class="login-form">
@@ -120,7 +136,7 @@
 
 
 <!-- category listing page  -->
-<section class="page-cate hide">
+<section class="page-cate" id="cate-read">
  <div class="headewith-img common-img">
    <p class="catecomm-para">Category Name</p>
  </div><!--headewith-img--> 
@@ -131,7 +147,7 @@
           <p class="news-name">Category Name</p>
       </div>
       <div class="col-xs-12 padd0 clearfix text-right">
-        <a href="" class="readmore-cate">READ MORE</a>
+        <a href="javascript:void(0);" class="readmore-cate read-view" id="">READ MORE</a>
       </div>
       <div class="col-xs-12 padd0">
         <img src="images/cimg.png" class="img-responsive img-center img-cate" alt="">
@@ -147,7 +163,7 @@
           <p class="news-name">Category Name</p>
       </div>
       <div class="col-xs-12 padd0 clearfix text-right">
-        <a href="" class="readmore-cate">READ MORE</a>
+        <a href="javascript:void(0);" class="readmore-cate  read-view">READ MORE</a>
       </div>
       <div class="col-xs-12 padd0">
         <img src="images/cimg.png" class="img-responsive img-center img-cate" alt="">
@@ -164,7 +180,7 @@
 </section>
 
 <!-- category listing view page -->
-<section class="page-cate padd-50 hide">
+<section class="page-cate padd-50" id="read-share">
  <div class="headewith-img common-img">
    <p class="catecomm-para">Category Name</p>
  </div><!--headewith-img--> 
@@ -205,7 +221,7 @@
 </section>
 
 <!-- newspaper new list -->
-<section class="page-cate">
+<section class="page-cate" id="cate-nav">
  <div class="headewith-img common-img">
    <p class="catecomm-para">Select Newspaper</p>
  </div><!--headewith-img--> 
@@ -324,7 +340,7 @@
 
 
 <!-- history section start -->
-<section class="history hide">
+<section class="history" id="history-nav">
   <div class="histoer-first common-img">
     <div class="top-header"><p class="hispara">History</p></div>
     <div class="history-scroll clearfix">
@@ -394,7 +410,7 @@
 
 
 <!-- setting page  -->
-<section class="setting hide">
+<section class="setting" id="setting-nav">
   <div class="profile-bg clearfix">
        <p class="text-center setting-para">Settings</p>
        <div class="profile-img" style="background:url('images/profile.png') no-repeat;"></div>

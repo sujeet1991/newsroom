@@ -59,6 +59,9 @@ body{
 
 }
 
+#user-log,#setting-nav,#history-nav,#cate-nav,#cate-read,#read-share{
+	display: none;
+}
 /*===================font custom========================*/
 
 
@@ -175,10 +178,11 @@ background: #0cd4e0;
 	margin: 10px auto;
 	background: #013f4a;
 	color: #fff;
-	font-size: 12px;
+	font-size: 16px;
 	border-radius: 40px;
 	border: transparent;
 	outline: none;
+	font-family: 'source_sans_proextralight';
 }
 .sub-menu{
 	list-style: none;
@@ -211,6 +215,59 @@ background: #0cd4e0;
 	font-size: 13px;
 	vertical-align: middle;
 }
+/*==================welcome section======================*/
+.welcome-sec{
+	width: 100%;
+	height: 100%;
+}
+.inner-welcome{
+	width: 100%;
+	display: block;
+	min-height: 75%;
+	background: #fff;
+	padding: 60px 0px;
+}
+.welcome-para{
+	font-family: 'source_sans_proextralight';
+	text-align: center;;
+	color: #000;
+	font-size: 2em;
+	margin:10% 0%; 
+
+}
+.fstart-btn{
+	width: 50%;
+    height: 51px;
+    font-family: 'source_sans_proextralight';
+    display: block;
+    border-radius: 30px;
+    margin: 22% auto;
+    border: 1px solid #0bc2cd;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 5px 0px;
+    vertical-align: middle;
+}
+.ready-acc{
+	text-align: center;
+	 font-family: 'source_sans_prosemibold';
+	 color: #fff;
+	 font-size: 1.3em;
+	 margin: 5% auto;
+
+
+}
+.ready-acc a{
+	text-align: center;
+	 font-family: 'source_sans_prosemibold';
+	 color: #fff;
+	 font-size: 1em;
+	 margin: 5% auto;
+}
+/*==================welcome section end ======================*/
+
+
+
 /*================first page start========================*/
 
 .with{
@@ -233,6 +290,8 @@ background: #0cd4e0;
 .login-form{
 	width: 100%;
 	margin-top: 20%;
+	position: relative;
+	overflow: hidden;
 }
 .sign-up-form{
 	width: 100%;
