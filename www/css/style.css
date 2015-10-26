@@ -59,7 +59,7 @@ body{
 
 }
 
-#user-log,#setting-nav,#history-nav,#cate-nav,#cate-read,#read-share{
+#user-log,#setting-nav,#history-nav,#cate-nav1,#cate-read,#read-share,#chech-box{
 	display: none;
 }
 /*===================font custom========================*/
@@ -252,7 +252,7 @@ background: #0cd4e0;
 	text-align: center;
 	 font-family: 'source_sans_prosemibold';
 	 color: #fff;
-	 font-size: 1.3em;
+	 font-size: 1.1em;
 	 margin: 5% auto;
 
 
@@ -364,7 +364,7 @@ background: #0cd4e0;
 
 }
 .share-icon li a{
-	font-size: 2.9em;
+	font-size: 2em;
 	color: #fff;
 	text-align: center;
 	display: block;
@@ -382,7 +382,7 @@ background: #0cd4e0;
 .share-para{
 	color: #fff;
 	font-family: 'source_sans_prosemibold';
-	font-size: 1.4em;
+	font-size: 1.1em;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -400,8 +400,8 @@ background: #0cd4e0;
 }
 .share-div{
 	width: 100%;
-	padding: 17px 0px;
-	height: 60px;
+	padding: 15px 0px;
+	height: 50px;
 	background:#0cd4e0;
 }
 .page-cate{
@@ -435,7 +435,7 @@ background: #0cd4e0;
 }
 .readmore-cate{
 	text-align: right;
-	font-size: 1.4em;
+	font-size: 1em;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #2fd7e2;
@@ -452,18 +452,19 @@ background: #0cd4e0;
 .category-sec{
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 	padding: 50px 0px;
 }
 .cata-para{
 	 font-family: 'source_sans_prosemibold';
-	 font-size: 1.8em;
+	 font-size: 1.4em;
 	 margin: 3% auto;
 	 text-align: center;
 	 color: #fff;
 }
 .spo-name{
 	font-family: 'source_sans_proextralight';
-	font-size: 1.4em;
+	font-size: 1.2em;
 	text-align: center;
 	color: #fff;
 }
@@ -697,7 +698,7 @@ background: #0cd4e0;
 }
 .newa-para{
 	color: #fff;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: 'source_sans_prosemibold';
 
 }

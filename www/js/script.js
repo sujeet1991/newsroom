@@ -113,12 +113,12 @@ $('.cate-nav').click(function(){
 	$('#setting-nav').hide();
 		$('#read-share').hide();
 		$('#cate-read').hide();
-	$('#cate-nav').show();
+	$('#cate-nav1').show();
 });
 // home page
 $('.opensign').click(function(){
 	$('#home').hide();
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
 	$('#setting-nav').hide();
 		$('#read-share').hide();
 		$('#cate-read').hide();
@@ -128,14 +128,14 @@ $('.user-log').click(function(){
 	$('#home').hide();
 	$('#setting-nav').hide();
 	$('#history-nav').hide();
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
 		$('#read-share').hide();
 		$('#cate-read').hide();
 	$('#user-log').show();
 });
 $('.home').click(function(){
 	$('#user-log').hide();
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
 	$('#setting-nav').hide();
 	$('#history-nav').hide();
 		$('#read-share').hide();
@@ -145,7 +145,7 @@ $('.home').click(function(){
 // history
 $('.history-nav').click(function(){
 	$('#home').hide();
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
 	$('#user-log').hide();
 	$('#setting-nav').hide();
 		$('#read-share').hide();
@@ -155,7 +155,7 @@ $('.history-nav').click(function(){
 // setting 
 $('.setting-nav').click(function(){
 	$('#home').hide();
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
 	$('#user-log').hide();
 		$('#read-share').hide();
 		$('#cate-read').hide();
@@ -164,7 +164,8 @@ $('.setting-nav').click(function(){
 });
 // after news paper
 $('.toi-img').click(function(){
-	$('#cate-nav').hide();
+	$('#cate-nav1').hide();
+	$('#chech-box').hide();
 	$('#cate-read').show();
 });
 $('.read-view').click(function(){
@@ -172,6 +173,11 @@ $('.read-view').click(function(){
 	$('#read-share').show();
 });
 
+// select category and news
+$('.smart-news').click(function(){
+	$('#cate-nav1').hide();
+	$('#chech-box').show();
+});
 
 
 });
